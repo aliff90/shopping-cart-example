@@ -6,16 +6,16 @@ import { addCart } from "../redux/product-action";
 
 const Product = (props) => {
     return (
-        <div>
+        <div className="product">
             <Link to={`/item/${props.product.id}`}>
-            <div className={props.product.id} data-testid="product">
+            <div className="productItem" data-testid="product">
                 <img src={props.product.image} alt={props.product.title}/>
-                <h1 title={props.product.title}>{props.product.title}</h1>
-                <h1>{"$" + props.product.price}</h1>
-                <h1>{props.product.description}</h1>
+                <h2 title={props.product.title}>{props.product.title}</h2>
+                <p>{props.product.description}</p>
+                <p className="price">{"$" + props.product.price}</p>
             </div>
             </Link>
-            <button onClick={() => props.addCart(props.product.id)}>Add to cart</button>
+            <button className="addToCart" onClick={() => props.addCart(props.product.id)}>Add to cart</button>
         </div>
         
     )

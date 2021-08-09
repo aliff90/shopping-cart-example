@@ -7,8 +7,6 @@
 
     h1 {
         margin-left: $l-size;
-        // background: $off-white;
-        // font-size: $l-size;
         font-style: italic;
         padding: 0.2rem;
         color: $off-white;
@@ -25,6 +23,12 @@
         cursor: pointer;
         padding: $xs-size;
         border-radius: $xs-size;
+        transition-duration: 0.4s;
+
+        &:hover {
+            background: black;
+            color: white;
+        }
     }
 
 }

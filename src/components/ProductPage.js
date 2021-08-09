@@ -8,7 +8,8 @@ const ProductPage = (props) => {
     return (
         <div>
             <Header />
-            {/* <div data-testid="product"> */}
+            <h1 className="fruits">Fruits</h1>
+            <div className="products">
             {props.products.map((product, index) => {
                 return (
                 <div data-testid={`product-${product.id}`} >
@@ -16,6 +17,7 @@ const ProductPage = (props) => {
                 </div>
                 )
             })}
+            </div>
         </div>
     )
 }

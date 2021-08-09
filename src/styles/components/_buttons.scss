@@ -1,0 +1,18 @@
+.addToCart {
+    border: none;
+    background: $off-green;
+    color: white;
+    padding: $s-size;
+    border-radius: 5px;
+    font-size: $s-size;
+    font-weight: 600;
+    box-shadow: 0.3rem 0.3rem 0.5rem darken($off-white, 50%);
+    transition-duration: 0.4s;
+
+    &:hover {
+        background: white;
+        border: 1px solid $off-green;
+        color: black;
+        
+    }
+}
