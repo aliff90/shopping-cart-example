@@ -1,0 +1,30 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: $off-green;
+    padding: $xs-size;
+
+    h1 {
+        margin-left: $l-size;
+        // background: $off-white;
+        // font-size: $l-size;
+        font-style: italic;
+        padding: 0.2rem;
+        color: $off-white;
+        cursor: pointer;
+
+    }
+
+    button {
+        margin-right: $l-size;
+        background: white none;
+        font-weight: 600;
+        border: none;
+        font-size: $s-size;
+        cursor: pointer;
+        padding: $xs-size;
+        border-radius: $xs-size;
+    }
+
+}

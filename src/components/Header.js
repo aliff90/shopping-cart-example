@@ -18,11 +18,12 @@ const Header = (props) => {
             <Link to={"/"}>
                 <h1>Shopping Cart Eg</h1>
             </Link>
-            <Link to={"/cart"}>
             <div>
+            <Link to={"/cart"}>
                 <button>Cart: {count}</button>
-            </div>
             </Link>
+            </div>
+            
         </div>
     )
 }
