@@ -20,12 +20,16 @@ const ProductItem = (props) => {
     return ([
         <div>
             <Header />
-            <div className="product-item" data-testid={`product-item-${product.id}`}>
-                <img src={product.image} alt={product.title}/>
-                <h1 title="item-title" >{product.title}</h1>
-                <h1>{"$" + product.price}</h1>
-                <h1>{product.description}</h1>
-                <button onClick={() => props.addCart(product.id)}>Add to cart</button>
+            <div className="item-container">
+                <div className="product-item" data-testid={`product-item-${product.id}`}>
+                    <img src={product.image} alt={product.title}/>
+                    <div className="product-description">
+                        <h1 title="item-title" >{product.title}</h1>
+                        <p>{product.description}</p>
+                        <p className="price">{"$" + product.price}</p>
+                        <button className="addToCart" onClick={() => props.addCart(product.id)}>Add to cart</button>
+                    </div>
+                </div>
             </div>
         </div>
     ])
