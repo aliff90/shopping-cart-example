@@ -1,0 +1,32 @@
+.cart-item {
+    display: flex;
+    justify-content:flex-start;
+    align-items: center;
+    flex-wrap: wrap;
+    background: white;
+    padding: $m-size $s-size 0 0;
+    margin:  0 0 $m-size 0;
+}
+
+.cart-item__text {
+    display: flex;
+    flex-direction: column;
+    width: 7rem;
+    word-wrap: break-word;
+}
+
+.cart-item__container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.cart-item__buttons {
+    margin-left: 7rem;
+    margin-right: 7rem;
+}
+
+.cart-item__item-qty {
+    font-size: $m-size;
+    font-weight: 600;
+}
+

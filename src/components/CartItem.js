@@ -15,23 +15,22 @@ const CartItem = (props) => {
 
     return (
         <div>
-            {/* {props.item.qty > 0 ?  */}
-                <div>
+            <div className="cart-item">
+                <button className="remove" onClick={() => props.removeItem(props.item.id)}>X</button>
                 <img src={props.item.image} alt={props.item.name} />
-                <h1 title={props.item.title}>{props.item.title}</h1>
-                <div>
-                    <button onClick={props.item.qty === 1 ? () => props.removeItem(props.item.id) : () => props.decreaseQty(props.item.id)}>-</button>
-                    <span title="qty">{props.item.qty}</span>
-                    <button onClick={() => props.increaseQty(props.item.id)}>+</button>
-                    <button onClick={() => props.removeItem(props.item.id)}>remove</button>
-                </div>
-                <div>
-                    <span>{formatTotalItemPrice}</span>
+                <div className="cart-item__container">
+                    <div className="cart-item__text">
+                        <h2 title={props.item.title}>{props.item.title}</h2>
+                        <p>{"$" + props.item.price}</p>
+                    </div>
+                    <div className="cart-item__buttons">
+                        <button  className="btn-qty" onClick={props.item.qty === 1 ? () => props.removeItem(props.item.id) : () => props.decreaseQty(props.item.id)}>-</button>
+                        <span title="qty">{props.item.qty}</span>
+                        <button className="btn-qty" onClick={() => props.increaseQty(props.item.id)}>+</button>
+                    </div>
+                    <span className="cart-item__item-qty">{formatTotalItemPrice}</span>
                 </div>
             </div>
-            {/* :
-            null
-            } */}
         </div>
     )
 }

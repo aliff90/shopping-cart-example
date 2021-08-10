@@ -1,0 +1,28 @@
+.cart {
+    display: flex;
+    justify-content: center;
+    // align-items: center;
+    flex-direction: row;
+    background: $off-white;
+}
+
+.cart-items {
+    display: flex;
+    flex-direction: column;
+    margin-right: $l-size;
+    margin-top: $m-size;
+}
+
+.cart__title {
+    color: grey;
+    margin: $s-size 0;
+    font-style: italic;
+    text-align: center;
+}
+
+.cart-empty {
+    line-height: 1.5;
+    font-size: $l-size;
+    text-align: center;
+    margin-top: $l-size;
+}

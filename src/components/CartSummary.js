@@ -24,13 +24,21 @@ const CartSummary = (props) => {
     },[subTotalPrice])
     
     return (
-        <div>
-            <h1>Subtotal</h1>
-            <span data-testid="subtotal">{formatSubTotalPrice}</span>
-            <h1>Delivery</h1>
-            <span>{deliveryFormat}</span>
-            <h1>Total</h1>
-            <span data-testId="total">{formatTotalPrice}</span>
+        <div className="cart-summary">
+            <div className="cart-summary__content">
+                <div className="subtotal">
+                    <h3>Subtotal</h3>
+                    <span data-testid="subtotal">{formatSubTotalPrice}</span>
+                </div>
+                <div className="delivery">
+                    <h3>Delivery</h3>
+                    <span>{deliveryFormat}</span>
+                </div>
+                <div className="total">
+                    <h3>Total</h3>
+                    <span className="total__price" data-testid="total">{formatTotalPrice}</span>
+                </div>
+            </div>
         </div>
     )
 }

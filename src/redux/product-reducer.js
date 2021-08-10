@@ -18,10 +18,10 @@ export const initialState = {
         },
         {
             id: 3,
-            title: "Lemon",
-            description: " 2 packs Fresh and sweet lemon from Japan",
+            title: "Cherry",
+            description: " 2 packs Fresh and sweet cherries from Japan",
             price: 1.95,
-            image: "https://images.pexels.com/photos/1414110/pexels-photo-1414110.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260",
+            image: "https://images.pexels.com/photos/109274/pexels-photo-109274.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260",
             qty: 0
         }
     ],
