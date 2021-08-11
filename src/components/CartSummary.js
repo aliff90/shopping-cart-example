@@ -9,6 +9,10 @@ const CartSummary = (props) => {
     const delivery = 2.00
     const deliveryFormat = numeral(delivery).format("$0,0.00");
     
+    const checkout = () => {
+        alert("Thank You For Ordering!");
+    }
+
     useEffect(() => {
         let subTotal = 0
         props.cartItem.map((item) => {
@@ -38,6 +42,7 @@ const CartSummary = (props) => {
                     <h3>Total</h3>
                     <span className="total__price" data-testid="total">{formatTotalPrice}</span>
                 </div>
+                <button onClick={checkout} className="checkout-btn">Checkout</button>
             </div>
         </div>
     )

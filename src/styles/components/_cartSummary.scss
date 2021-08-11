@@ -5,6 +5,8 @@
 }
 
 .cart-summary__content {
+    display: flex;
+    flex-direction: column;
     padding: $xs-size $s-size;
     line-height: 2.5;
 }
@@ -29,6 +31,7 @@
 .total {
     background: $off-white;
     margin-top: $s-size;
+    margin-bottom: $s-size;
     padding: $xs-size 0;
     border: none;
 
