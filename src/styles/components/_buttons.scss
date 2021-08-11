@@ -24,6 +24,12 @@
     border-radius: 50%;
     padding: $xs-size $s-size;
     margin: 0 $s-size;
+
+    @media (max-width: 400px) {
+        font-size: $s-size;
+        margin: 0;
+        padding: 0.3rem $xs-size;
+    }
 }
 
 .remove {

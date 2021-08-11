@@ -31,4 +31,13 @@
         }
     }
 
+    @media (max-width: 420px) {
+        h1 {
+            font-size: $l-size;
+        }
+
+        button {
+            font-size: 0.8rem;
+        }
+    }
 }

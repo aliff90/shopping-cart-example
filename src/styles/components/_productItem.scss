@@ -13,10 +13,16 @@
 .product-item {
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
     background: white;
     width: 900px;
     margin-top: $l-size;
     margin-bottom: $l-size;
+
+    @media (max-width: 910px) {
+        width: 90%;
+    }
 }
 
 .product-description {
